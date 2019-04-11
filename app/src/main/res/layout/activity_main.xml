@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <!-- Mistakes that I have done is naming convention -->
+    <!-- TextView should start with tv -->
+    <!-- EditText should start with et -->
+    <TextView
+        android:id="@+id/etFirst"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:text="Enter first number"
+     />
+    <EditText
+        android:id="@+id/tvFirst"
+        android:inputType="number"
+        android:layout_width="200dp"
+        android:layout_toEndOf="@id/etFirst"
+        android:layout_height="50dp"
+        android:layout_toRightOf="@id/etFirst"
+        />
+    <TextView
+        android:id="@+id/etSecond"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:text="Enter second number"
+        android:layout_below="@id/etFirst"
+        />
+    <EditText
+        android:id="@+id/tvSecond"
+        android:inputType="number"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_toEndOf="@+id/etSecond"
+        android:layout_toRightOf="@+id/etSecond"
+        android:layout_below="@+id/tvFirst"/>
+    <Button
+        android:id="@+id/btnCalc"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:text="Calc"
+        android:layout_below="@+id/etSecond"
+        android:layout_centerInParent="true"
+
+        />
+    <Button
+        android:id="@+id/btnClose"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:text="Close"
+        android:layout_below="@+id/btnCalc"
+        android:layout_centerInParent="true"
+       />
+</RelativeLayout>
